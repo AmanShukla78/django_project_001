@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page demo 1</title>
+    <style>
+        /* reset css*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #efefef;
+            color: #333;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        #s1 {
+            background-color: rgb(100, 176, 251);
+            background-image: url('R.jpeg');
+            background-size: cover;
+            display: grid;
+            place-items: center;
+        }
+
+
+
+
+
+
+        .container {
+
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        #leftcol {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        #logo {
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+        .logoarea {
+            display: flex;
+            justify-content: center;
+            padding: .5rem;
+
+        }
+
+        h1 {
+            font-size: 7em;
+            font-family: sans-serif;
+            font-weight: lighter;
+            text-align: center;
+
+
+        }
+
+        h1>span {
+            font-weight: bold;
+        }
+
+        .btnarea {
+            display: flex;
+            justify-content: center;
+        }
+
+        a {
+            text-decoration: none;
+            background-color: white;
+            font-weight: 3rem;
+            padding: 1rem 2rem;
+            display: block;
+            width: 200px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #s2 {
+            display: grid;
+            place-items: center;
+
+        }
+
+        .container2>h2 {
+            color: blue;
+            text-align: center;
+
+        }
+
+        .services {
+            display: flex;
+            gap: 75px;
+            justify-content: center;
+
+        }
+
+        .svc_card {
+            background-color: blue;
+            color: white;
+            border-radius: 10px;
+            width: 400px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 2rem;
+        }
+
+        .svc_card>p {
+            font-size: 1.5rem;
+        }
+
+        .svc_card>h3 {
+            font-size: 2.2rem;
+        }
+
+        .svc_card>.icon {
+            display: block;
+            filter: invert(1);
+        }
+
+        .container2 {
+            gap: 5rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container4 {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .third {
+            font-size: 3rem;
+        }
+
+        .sup {
+            color: white;
+        }
+
+        #s4 {
+            background-color: blue;
+            display: grid;
+            place-items: center;
+        }
+
+        .leftcol2 {
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            padding: 8rem
+        }
+
+        #s3 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .container3 {
+            display: flex;
+        }
+
+        .rightcol2 {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: row;
+            gap: 2rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section id="s1">
+            <div class="container">
+                <div id="leftcol">
+                    <div class="logoarea">
+                        <img src="C:\Users\hp\Documents\django_project_001\templates\logo.png" alt="" height="60"
+                            width="60"><span id="logo">Company<br> Name</span>
+                    </div>
+                    <div>
+                        <h1>Changing the world <br>
+                            <span>one app at a time</span>
+                        </h1>
+                    </div>
+                    <div class="btnarea">
+                        <a href="#">Learn More</a>
+                    </div>
+
+                </div>
+                <div id="rightcol">
+                    <img src="hero.png" alt="" width="500" height="600">
+                </div>
+            </div>
+        </section>
+        <section id="s2">
+            <div class="container2">
+                <h2>Our Services</h2>
+                <div class="services">
+                    <div class="svc_card">
+                        <img src="pic1.webp" alt="" class="icon" height="100" width="100">
+                        <h3>Lorem, ipsum dolor.</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, quasi.</p>
+                    </div>
+                    <div class="svc_card">
+                        <h3>Nemo, vitae dolorem?</h3>
+                        <img src="pic1.webp" alt="" class="icon" height="100" width="100">
+                        <p>Quam suscipit laborum sunt, neque et eum! Animi, nam deleniti.</p>
+                    </div>
+                    <div class="svc_card">
+                        <h3>Quis, nisi laboriosam.</h3>
+                        <img src="pic1.webp" alt="" class="icon" height="100" width="100">
+                        <p>Quos delectus aspernatur, dolores fugit quod veritatis facere sint sequi!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="s3">
+            <div class="container3">
+                <div class="leftcol2">
+                    <h2 class="heading2">Our Company Store</h1>
+                        <p><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam, debitis.</p>
+                </div>
+                <div class="rightcol2">
+                    <div><img src="download.jpg" alt="" width="200px" height="400px"
+                            style="padding-bottom: 2rem; border-radius: 5px; display: grid; border-radius: 5px;"></div>
+                    <div><img src="download.jpg" alt="" width="200px" height="400px"
+                            style="padding-top: 2rem; display: grid; border-radius: 5px;"></div>
+                </div>
+            </div>
+        </section>
+        <section id="s4">
+            <div class="container4">
+
+                <p class="third"><strong class="sup"> Technology</strong> isn't about the latest gadgets<br> or
+                    apps.It's
+                    about what these things do for<br> people.It's about bringing people together <br> and <strong
+                        class="sup">making lives better</strong>.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h1 class="last">Connect with Us</h1>
+                <ul>
+                    <li>Twitter</li>
+                    <li>Facebook</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+            <div></div>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
